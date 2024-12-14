@@ -2,7 +2,7 @@
 #include <ESP8266WebServer.h>
 
 const char* ssid = "MyASUS";     // Nome della rete Wi-Fi
-const char* password = "Vuoiilpesce"; // Password della rete Wi-Fi
+const char* password = "Password"; // Password della rete Wi-Fi
 
 ESP8266WebServer server(80); // Configura il server web sulla porta 80
 
