@@ -2,17 +2,17 @@
 #include <ESP8266WebServer.h>
 
 const char* ssid = "MyASUS";     // Nome della rete Wi-Fi
-const char* password = "Password"; // Password della rete Wi-Fi
+const char* password = "Vuoiilpesce"; // Password della rete Wi-Fi
 
 ESP8266WebServer server(80); // Configura il server web sulla porta 80
 
-const int ledPin = D2; // Pin GPIO collegato al LED (D2 = GPIO4)
+const int ledPin = 6; // Pin GPIO collegato al LED (D2 = GPIO4)
 
 void setup() {
   pinMode(ledPin, OUTPUT);       // Configura il pin LED come uscita
   digitalWrite(ledPin, LOW);     // Spegne il LED inizialmente
 
-  Serial.begin(115200);          // Avvia la comunicazione seriale
+  Serial.begin(9600);          // Avvia la comunicazione seriale
   WiFi.begin(ssid, password);    // Connessione alla rete Wi-Fi
 
   // Attesa della connessione
